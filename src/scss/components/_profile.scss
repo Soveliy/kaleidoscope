@@ -1,0 +1,27 @@
+.profile {
+  &__row {
+    display: flex;
+  }
+  &__left {
+    margin-right: 4px;
+  }
+  &__pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+    height: 9.375rem;
+    img {
+      max-height: 9.375rem;
+      max-width: 100%;
+    }
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #5f1880 0%, #cc1384 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

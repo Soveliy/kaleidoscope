@@ -1,0 +1,30 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/course-info";
+@import "./components/profile";
+@import "./components/search";
+@import "./components/header-page";
+@import "./components/courses";
+@import "./components/content-menu";
+@import "./components/progress";
+.main {
+  padding-top: 3.75rem;
+}
+
+.content {
+  &__row {
+    display: flex;
+  }
+  &__menu {
+    flex-shrink: 0;
+    max-width: 15.75rem;
+    margin-right: 1.875rem;
+    width: 100%;
+  }
+}

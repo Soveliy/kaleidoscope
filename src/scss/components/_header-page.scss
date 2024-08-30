@@ -1,0 +1,48 @@
+.header-page {
+  position: relative;
+  z-index: 50;
+  padding: 1.875rem 0;
+  &__row {
+    @include flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.875rem;
+  }
+  &__title {
+    position: relative;
+    margin: 0;
+    padding: 0.625rem 2.5rem 0.625rem 17.625rem;
+    font-weight: 700;
+    font-size: 3.125rem;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    max-width: 43.75rem;
+    color: #fff;
+    @include lit-desktop {
+      font-size: 2rem;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: calc(100% + (100vw - 1760px) / 2);
+      background: linear-gradient(
+        90deg,
+        rgba(101, 25, 128, 1) 0%,
+        rgba(208, 15, 132, 1) 100%
+      );
+      border-radius: 0 1.875rem 1.875rem 0;
+      z-index: -1;
+      @media (max-width: 1800px) {
+        width: calc(100% + 30px);
+      }
+    }
+  }
+
+  &__search {
+    max-width: 550px;
+    width: 100%;
+  }
+}

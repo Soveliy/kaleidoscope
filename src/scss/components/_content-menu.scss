@@ -1,0 +1,33 @@
+.menu {
+  &__item + &__item {
+    margin-top: 3.125rem;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #000;
+  }
+  &__list {
+    margin-top: 1.125rem;
+  }
+  &__list-item {
+    & + & {
+      margin-top: 1.5625rem;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.5625rem;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #000;
+    text-decoration: none;
+    img {
+      margin-right: 0.625rem;
+    }
+  }
+}

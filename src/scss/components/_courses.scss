@@ -1,0 +1,57 @@
+.courses {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem 2.5rem;
+
+    @include big-desktop {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem 2rem;
+    }
+
+    @include very-lit-desktop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &-preview {
+    &--disabled {
+      opacity: 0.2;
+      pointer-events: none;
+    }
+    &__image-container {
+      display: block;
+      height: 11.25rem;
+      border-radius: 1.625rem;
+      img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 1.625rem;
+      }
+    }
+    &__body {
+      display: flex;
+      flex-direction: column;
+      padding: 0.625rem 1.25rem 0;
+      box-sizing: border-box;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 2.125rem;
+      line-height: 100%;
+      background: linear-gradient(90deg, #0160eb 0%, #0091fa 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &__desc {
+      margin-top: 0.3125rem;
+      font-size: 1.5625rem;
+      line-height: 100%;
+      letter-spacing: 0.02em;
+      color: #090909;
+    }
+  }
+}
