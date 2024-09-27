@@ -11,7 +11,7 @@
     color: #000;
   }
   &__list {
-    margin-top: 1.125rem;
+    margin-top: 1.25rem;
   }
   &__list-item {
     & + & {
@@ -21,13 +21,33 @@
   &__link {
     display: flex;
     align-items: flex-start;
-    font-size: 1.5625rem;
+    font-weight: 700;
+    font-size: 1.25rem;
     line-height: 100%;
     letter-spacing: 0.02em;
-    color: #000;
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
     img {
       margin-right: 0.625rem;
     }
+  }
+  &__logout {
+    margin-top: 5rem;
+  }
+  &__progress {
+    margin-top: 0.25rem;
+  }
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #cc1384;
+  svg {
+    margin-left: 0.625rem;
   }
 }

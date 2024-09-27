@@ -1,44 +1,76 @@
-.progress-bar {
-  &__wrap {
-    position: relative;
-    height: 11rem;
-    width: 11rem;
-  }
+// .progress-bar {
+//   &__wrap {
+//     position: relative;
+//     height: 11rem;
+//     width: 11rem;
+//   }
 
-  &__line {
-    position: relative;
-    z-index: 100;
-    height: 100%;
-    width: 100%;
-    b {
-      font-weight: 700;
-      font-size: 2.375rem;
-      letter-spacing: -0.02em;
-      color: #721c82;
-    }
-    div {
-      font-size: 1.125rem;
-      letter-spacing: -0.02em;
-      background: linear-gradient(90deg, #5f1880 0%, #cc1384 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    &--lit {
-      b {
-        font-size: 1.775rem;
-      }
-    }
+//   &__line {
+//     position: relative;
+//     z-index: 100;
+//     height: 100%;
+//     width: 100%;
+//     b {
+//       font-weight: 700;
+//       font-size: 2.375rem;
+//       letter-spacing: -0.02em;
+//       color: #721c82;
+//     }
+//     div {
+//       font-size: 1.125rem;
+//       letter-spacing: -0.02em;
+//       background: linear-gradient(90deg, #5f1880 0%, #cc1384 100%);
+//       background-clip: text;
+//       -webkit-background-clip: text;
+//       -webkit-text-fill-color: transparent;
+//     }
+//     &--lit {
+//       b {
+//         font-size: 1.775rem;
+//       }
+//     }
+//   }
+//   &__current {
+//     color: #cc1384;
+//   }
+
+//   &__round {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//   }
+// }
+.progress {
+  &__row {
+    display: flex;
+    align-items: center;
   }
-  &__current {
+  &__value {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-align: center;
     color: #cc1384;
+    flex-shrink: 0;
+    min-width: 2.75rem;
   }
-
-  &__round {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+  &__bar {
     width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 5px;
+    border-radius: 15px;
+    background: linear-gradient(
+      90deg,
+      rgba(1, 96, 235, 0.2) 0%,
+      rgba(0, 145, 250, 0.2) 100%
+    );
+  }
+  &__counter {
+    height: 100%;
+    background-color: #cc1384;
   }
 }

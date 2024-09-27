@@ -37,28 +37,6 @@ a {
   position: relative;
   padding: 1.875rem 0 7.5rem;
   background: linear-gradient(135deg, #e7f4fe 0%, #fbfdff 20.8%);
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: url(../img/logo.svg) no-repeat center center;
-    width: 380px;
-    height: 400px;
-    right: 300px;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: url(../img/shadow.svg) no-repeat center center;
-    width: 380px;
-    height: 400px;
-    border-radius: 100%;
-    background: rgba(204, 232, 254, 1);
-    filter: blur(300px);
-  }
 }
 
 .is-hidden {
