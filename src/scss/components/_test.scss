@@ -1,0 +1,197 @@
+.test {
+  position: fixed;
+  overflow: auto;
+  z-index: 5000;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-bottom: 3.125rem;
+  background: linear-gradient(135deg, #e7f4fe 0%, #fbfdff 20.8%);
+  &__head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    gap: 5px;
+    width: 82.6875rem;
+    margin: 0 auto 2.5rem;
+    background: linear-gradient(135deg, #651980 0%, #d00f84 80%, #d00f84 100%);
+    border-radius: 0 0 60px 60px;
+  }
+  &__pretitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+  &__container {
+    max-width: 70rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__answer {
+    margin-top: 1.25rem;
+    padding: 1.25rem 1.5625rem;
+    box-sizing: border-box;
+    border-radius: 1.25rem;
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.5rem;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 0.9375rem;
+    background-color: #0091fa;
+    padding: 0.75rem 1.875rem;
+    color: #fff;
+    cursor: pointer;
+    svg {
+      margin-left: 0.625rem;
+    }
+  }
+  &__close {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    height: 34px;
+    width: 34px;
+    position: absolute;
+    top: 3.5rem;
+    right: 5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.test-status {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  gap: 1.25rem;
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  &__item {
+    font-size: 0;
+    border-radius: 20px;
+    width: 2rem;
+    height: 0.5rem;
+    background: #e4ebf1;
+    &--success {
+      background: #23e063;
+    }
+    &--current {
+      background-color: rgba(0, 145, 250, 0.2);
+    }
+  }
+  &__counter {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #0091fa;
+  }
+}
+
+.test-item {
+  &__title {
+    position: relative;
+    padding-bottom: 1.875rem;
+    margin-bottom: 2.5rem;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 0.02em;
+    color: #000;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 6.25rem;
+      height: 0.5rem;
+      background: linear-gradient(
+        90deg,
+        rgba(101, 25, 128, 0.9) 0%,
+        rgba(208, 15, 132, 0.9) 100%
+      );
+      border-radius: 0.625rem;
+    }
+  }
+  &__fake-radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1.4375rem 0.9375rem 1.4375rem 3.5rem;
+    border-top: 2px solid #e4ebf1;
+    cursor: pointer;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      border: 2px solid rgba(0, 0, 0, 0.8);
+      box-sizing: border-box;
+      transition: 0.3s;
+      margin-top: -1px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 14px;
+      width: 14px;
+      border-radius: 50%;
+      background-color: #23e063;
+      box-sizing: border-box;
+      opacity: 0;
+      margin-top: -1px;
+      transition: 0.3s;
+    }
+  }
+  &__option {
+    input {
+      display: none;
+      &:checked + .test-item__fake-radio {
+        &:before {
+          border-color: #23e063;
+        }
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+    &:last-child {
+      .test-item__fake-radio {
+        border-bottom: 2px solid #e4ebf1;
+      }
+    }
+  }
+}
