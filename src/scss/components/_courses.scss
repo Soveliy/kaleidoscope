@@ -96,3 +96,11 @@
 	z-index: 3;
 }
 
+.courses__header {
+	&:not(:last-child){
+		margin-bottom: 1.875rem;
+	}
+}
+
+.courses__breadcrumb {
+}
