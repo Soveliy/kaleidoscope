@@ -33,7 +33,7 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+//   overflow: hidden; 
   position: relative;
   padding: 1.875rem 0 7.5rem;
   background: linear-gradient(135deg, #e7f4fe 0%, #fbfdff 20.8%);
