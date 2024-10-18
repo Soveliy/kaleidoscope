@@ -33,6 +33,11 @@
     color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
 	 padding: 0.9375rem 0px;
+	 transition: all 0.4s ease 0s;
+	//  &::before{
+	// 	content:''; 
+	// 	transition: all 0.4s ease 0s;
+	//  }
     img {
       margin-right: 0.625rem;
     }
@@ -59,6 +64,23 @@
   &__progress {
     margin-top: 0.25rem;
   }
+}
+
+.menu__list-item._active {
+	.menu__link {
+		&::before{
+			content:''; 
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: -20px;
+			width: 110%;
+			height: 100%;
+			background-color: #0091fa38;
+			border-left: 0.25rem solid #0091FA;
+			border-radius: 0 15px 15px 0;
+		}
+	  }
 }
 
 .logout {
