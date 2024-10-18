@@ -28,10 +28,16 @@
     }
     &__image-container {
       display: block;
-      height: 12.5rem;
+		position: relative;
+		padding-bottom: 58.5%;
+		overflow: hidden;
+      // height: 12.5rem;
       border-radius: 1.625rem; 
 		background-color: #80808059;
       img {
+			position: absolute;
+			top: 0;
+			left: 0;
         display: block;
         height: 100%;
         width: 100%;
