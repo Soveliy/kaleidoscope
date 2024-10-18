@@ -11,14 +11,19 @@
     color: #000;
   }
   &__list {
+	// overflow: hidden;
     margin-top: 1.25rem;
   }
   &__list-item {
+	position: relative;
     & + & {
-      margin-top: 1.5625rem;
+		
+      // margin-top: 1.5625rem;
     }
   }
   &__link {
+	position: relative;
+	z-index: 3;
     display: flex;
     align-items: flex-start;
     font-weight: 700;
@@ -27,9 +32,26 @@
     letter-spacing: 0.02em;
     color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
+	 padding: 0.9375rem 0px;
     img {
       margin-right: 0.625rem;
     }
+	 @media (any-hover: hover){
+		&:hover { 
+		  &::before{
+			  content:''; 
+			  position: absolute;
+			  top: 50%;
+			  transform: translateY(-50%);
+			  left: -20px;
+			  width: 110%;
+			  height: 100%;
+			  background-color: #0091fa38;
+			  border-left: 0.25rem solid #0091FA;
+			  border-radius: 0 15px 15px 0;
+		  }
+	 } 
+  }
   }
   &__logout {
     margin-top: 5rem;
