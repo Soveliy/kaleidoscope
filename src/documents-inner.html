@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+	<div class="site-container">
+		@include('partials/header.html')
+		<main class="main">
+
+			<div class="header-page">
+				<div class="container">
+					<div class="header-page__row">
+						@include('partials/status.html')
+						<h1 class="header-page__title">
+							Документы
+						</h1>
+						@include('partials/search.html')
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="container">
+					<div class="content__row">
+
+						@include('partials/sidebar.html')
+
+						<div class="content__right">
+							<div class="courses">
+
+
+								<div class="courses__header">
+									<div class="courses__breadcrumb breadcrumb">
+										<ul class="list-reset breadcrumb__items">
+											<li class="breadcrumb__item">
+												<a href="testing-skills.html">Документы</a>
+											</li>
+											<li class="breadcrumb__item">Тех. карты</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="courses__grid">
+
+									<div class="courses-preview">
+										<span class="courses-preview__sticker sticker-check">
+											<svg width="58" height="58" viewBox="0 0 58 58" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M28.1538 3.33706C28.5463 2.7162 29.4518 2.7162 29.8443 3.33706L36.3188 13.5786C36.523 13.9016 36.8934 14.08 37.2732 14.0383L49.3172 12.7147C50.0473 12.6345 50.6119 13.3425 50.3712 14.0364L46.4008 25.4839C46.2756 25.8449 46.3671 26.2457 46.6365 26.5167L55.1806 35.1078C55.6986 35.6286 55.4971 36.5114 54.8044 36.7559L43.379 40.7891C43.0186 40.9163 42.7623 41.2378 42.7184 41.6174L41.3288 53.6539C41.2445 54.3835 40.4287 54.7764 39.8057 54.3874L29.5287 47.9692C29.2046 47.7668 28.7934 47.7668 28.4693 47.9692L18.1924 54.3874C17.5694 54.7764 16.7535 54.3835 16.6693 53.6539L15.2796 41.6174C15.2358 41.2378 14.9794 40.9163 14.6191 40.7891L3.19362 36.7559C2.50099 36.5114 2.29949 35.6286 2.81745 35.1078L11.3615 26.5167C11.631 26.2457 11.7225 25.8449 11.5972 25.4839L7.62685 14.0364C7.38616 13.3425 7.95075 12.6345 8.68087 12.7147L20.7248 14.0383C21.1047 14.08 21.4751 13.9016 21.6793 13.5786L28.1538 3.33706Z"
+													fill="url(#paint0_linear_396_332)" stroke="white" stroke-width="4" />
+												<path d="M20.7029 28.9622L25.8881 34.1474L37.2955 22.74" stroke="white"
+													stroke-width="4" />
+												<defs>
+													<linearGradient id="paint0_linear_396_332" x1="1" y1="2" x2="56.998" y2="57.998"
+														gradientUnits="userSpaceOnUse">
+														<stop stop-color="#31E46E" />
+														<stop offset="1" stop-color="#17C854" />
+													</linearGradient>
+												</defs>
+											</svg>
+										</span>
+										<a class="courses-preview__image-container" href="#">
+											<img src="img/documents/02.jpg" loading="lazy" alt="Картинка">
+										</a>
+										<div class="courses-preview__body">
+											<a class="courses-preview__title" href="#">Безопасность в помещении</a>
+											<div class="courses-preview__desc">
+												Бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла
+											</div>
+										</div>
+									</div>
+
+									<div class="courses-preview">
+										<a class="courses-preview__image-container" href="#">
+											<img src="img/documents/02.jpg" loading="lazy" alt="Картинка">
+										</a>
+										<div class="courses-preview__body">
+											<a class="courses-preview__title" href="#">Общение с <br> поставщиками</a>
+											<div class="courses-preview__desc">
+												Бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла
+											</div>
+										</div>
+									</div>
+
+									<div class="courses-preview">
+										<span class="courses-preview__sticker sticker-check">
+											<svg width="58" height="58" viewBox="0 0 58 58" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M28.1538 3.33706C28.5463 2.7162 29.4518 2.7162 29.8443 3.33706L36.3188 13.5786C36.523 13.9016 36.8934 14.08 37.2732 14.0383L49.3172 12.7147C50.0473 12.6345 50.6119 13.3425 50.3712 14.0364L46.4008 25.4839C46.2756 25.8449 46.3671 26.2457 46.6365 26.5167L55.1806 35.1078C55.6986 35.6286 55.4971 36.5114 54.8044 36.7559L43.379 40.7891C43.0186 40.9163 42.7623 41.2378 42.7184 41.6174L41.3288 53.6539C41.2445 54.3835 40.4287 54.7764 39.8057 54.3874L29.5287 47.9692C29.2046 47.7668 28.7934 47.7668 28.4693 47.9692L18.1924 54.3874C17.5694 54.7764 16.7535 54.3835 16.6693 53.6539L15.2796 41.6174C15.2358 41.2378 14.9794 40.9163 14.6191 40.7891L3.19362 36.7559C2.50099 36.5114 2.29949 35.6286 2.81745 35.1078L11.3615 26.5167C11.631 26.2457 11.7225 25.8449 11.5972 25.4839L7.62685 14.0364C7.38616 13.3425 7.95075 12.6345 8.68087 12.7147L20.7248 14.0383C21.1047 14.08 21.4751 13.9016 21.6793 13.5786L28.1538 3.33706Z"
+													fill="url(#paint0_linear_396_332)" stroke="white" stroke-width="4" />
+												<path d="M20.7029 28.9622L25.8881 34.1474L37.2955 22.74" stroke="white"
+													stroke-width="4" />
+												<defs>
+													<linearGradient id="paint0_linear_396_332" x1="1" y1="2" x2="56.998" y2="57.998"
+														gradientUnits="userSpaceOnUse">
+														<stop stop-color="#31E46E" />
+														<stop offset="1" stop-color="#17C854" />
+													</linearGradient>
+												</defs>
+											</svg>
+										</span>
+										<a class="courses-preview__image-container" href="#">
+											<img src="img/documents/02.jpg" loading="lazy" alt="Картинка">
+										</a>
+										<div class="courses-preview__body">
+											<a class="courses-preview__title" href="#">Поиск <br> водителей</a>
+											<div class="courses-preview__desc">
+												Бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла
+											</div>
+										</div>
+									</div>
+
+									<div class="courses-preview">
+										<span class="courses-preview__sticker sticker-check">
+											<svg width="58" height="58" viewBox="0 0 58 58" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M28.1538 3.33706C28.5463 2.7162 29.4518 2.7162 29.8443 3.33706L36.3188 13.5786C36.523 13.9016 36.8934 14.08 37.2732 14.0383L49.3172 12.7147C50.0473 12.6345 50.6119 13.3425 50.3712 14.0364L46.4008 25.4839C46.2756 25.8449 46.3671 26.2457 46.6365 26.5167L55.1806 35.1078C55.6986 35.6286 55.4971 36.5114 54.8044 36.7559L43.379 40.7891C43.0186 40.9163 42.7623 41.2378 42.7184 41.6174L41.3288 53.6539C41.2445 54.3835 40.4287 54.7764 39.8057 54.3874L29.5287 47.9692C29.2046 47.7668 28.7934 47.7668 28.4693 47.9692L18.1924 54.3874C17.5694 54.7764 16.7535 54.3835 16.6693 53.6539L15.2796 41.6174C15.2358 41.2378 14.9794 40.9163 14.6191 40.7891L3.19362 36.7559C2.50099 36.5114 2.29949 35.6286 2.81745 35.1078L11.3615 26.5167C11.631 26.2457 11.7225 25.8449 11.5972 25.4839L7.62685 14.0364C7.38616 13.3425 7.95075 12.6345 8.68087 12.7147L20.7248 14.0383C21.1047 14.08 21.4751 13.9016 21.6793 13.5786L28.1538 3.33706Z"
+													fill="url(#paint0_linear_396_332)" stroke="white" stroke-width="4" />
+												<path d="M20.7029 28.9622L25.8881 34.1474L37.2955 22.74" stroke="white"
+													stroke-width="4" />
+												<defs>
+													<linearGradient id="paint0_linear_396_332" x1="1" y1="2" x2="56.998" y2="57.998"
+														gradientUnits="userSpaceOnUse">
+														<stop stop-color="#31E46E" />
+														<stop offset="1" stop-color="#17C854" />
+													</linearGradient>
+												</defs>
+											</svg>
+										</span>
+										<a class="courses-preview__image-container" href="#">
+											<img src="img/documents/02.jpg" loading="lazy" alt="Картинка">
+										</a>
+										<div class="courses-preview__body">
+											<a class="courses-preview__title" href="#">Работа с <br> логистическими компаниями</a>
+											<div class="courses-preview__desc">
+												Бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла
+											</div>
+										</div>
+									</div>
+
+									<div class="courses-preview">
+										<a class="courses-preview__image-container" href="#">
+											<img src="img/documents/02.jpg" loading="lazy" alt="Картинка">
+										</a>
+										<div class="courses-preview__body">
+											<a class="courses-preview__title" href="#">Охрана труда</a>
+											<div class="courses-preview__desc">
+												Бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла-бла
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</main>
+		@include('partials/footer.html')
+		<!-- @include('html/h1.html') пример include -->
+	</div>
+</body>
+
+</html>
