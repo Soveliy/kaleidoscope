@@ -1,0 +1,28 @@
+//<BUTTONS (a.btn+tab)>
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.5rem;
+	padding: 1.4375rem 3.625rem;
+	font-weight: 600;
+	color: #fff;
+	background-color: #0079F3;
+	border: inherit;
+	border-radius: 1.5625rem;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+
+	@media (any-hover: hover) {
+	&:hover {
+		opacity: 0.7;
+	}
+	}
+	
+	&.fw {
+		width: 100%;
+	}
+}

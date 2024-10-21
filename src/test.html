@@ -6,8 +6,10 @@
 <body class="page__body">
 	<div class="site-container">
 		@include('partials/header.html')
+
 		<main class="main">
-			<div class="header-page">
+
+			<!-- <div class="header-page">
 				<div class="container">
 					<div class="header-page__row">
 						@include('partials/status.html')
@@ -158,23 +160,28 @@
 					</div>
 				</div>
 
-			</div>
-			<div class="test">
-				<button class="test__close">
+			</div> -->
+
+			<div class="module">
+
+				<button class="module__close">
 					<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M2 2L19 19M36 36L19 19M19 19L2 36M19 19L36 2" stroke="black" stroke-opacity="0.8"
 							stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 					</svg>
 				</button>
-				<div class="test__head">
-					<div class="test__pretitle">
+
+				<div class="module__head">
+					<div class="module__pretitle">
 						Тестирование
 					</div>
-					<div class="test__title">
+					<div class="module__title">
 						Как правильно установить скидку на Wildberries
 					</div>
 				</div>
-				<div class="test__container">
+
+				<div class="test module__container">
+
 					<div class="test-status">
 						<div class="test-status__items">
 							<div class="test-status__item test-status__item--success"></div>
@@ -186,8 +193,9 @@
 							4/6
 						</div>
 					</div>
-					<div class="test-item">
-						<div class="test-item__title">
+
+					<div class="module__header header-module test-item">
+						<div class="header-module__title">
 							При какие условиях на товар действует скидка СПП от Wildberries?
 						</div>
 						<div class="test-item__options">
@@ -217,13 +225,14 @@
 								<span class="test-item__fake-radio">
 									Одно дело, если вы — сами себе поставщик. То есть производите товар.
 								</span>
-
 							</label>
 						</div>
 					</div>
+
 					<div class="test__answer">
 						Не верно. Если вы — сами себе поставщик. То есть производите товар.
 					</div>
+
 					<div class="test__footer">
 						<button class="test__button">
 							Далее
@@ -233,9 +242,11 @@
 							</svg>
 						</button>
 					</div>
+
 				</div>
 
 			</div>
+
 		</main>
 		@include('partials/footer.html')
 		<!-- @include('html/h1.html') пример include -->

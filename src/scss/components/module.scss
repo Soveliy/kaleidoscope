@@ -1,0 +1,140 @@
+.module {
+	position: fixed;
+	overflow: auto;
+	z-index: 5000;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding-bottom: 3.125rem;
+	background: linear-gradient(135deg, #e7f4fe 0%, #fbfdff 20.8%);
+	&__head {
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column;
+	  justify-content: center; 
+	  padding: 2.5rem;
+	  box-sizing: border-box;
+	  gap: 5px;
+	  max-width: 82.6875rem;
+	  width: 100%;
+	  margin: 0 auto 2.5rem;
+	  background: linear-gradient(135deg, #651980 0%, #d00f84 80%, #d00f84 100%);
+	  border-radius: 0 0 3.75rem 3.75rem; 
+	}
+	&__pretitle {
+	  font-weight: 700;
+	  font-size: 1.25rem;
+	  line-height: 100%;
+	  letter-spacing: 0.02em;
+	  text-transform: uppercase;
+	  color: rgba(255, 255, 255, 0.6);
+	}
+	&__title {
+	  font-weight: 700;
+	  font-size: 2.5rem;
+	  letter-spacing: -0.02em;
+	  color: #fff;
+	}
+	&__container {
+	  max-width: 70rem;
+	  width: 100%;
+	  margin: 0 auto;
+	}
+	&__close {
+	  background-color: transparent;
+	  border: 0;
+	  outline: 0;
+	  height: 2.125rem;
+	  width: 2.125rem;
+	  position: absolute;
+	  top: 3.5rem;
+	  right: 5rem;
+	  box-sizing: border-box;
+	  cursor: pointer;
+	  svg {
+		 height: 100%;
+		 width: 100%;
+	  }
+	}
+	&__header {
+
+	}
+	&__body {
+		&:not(:last-child){
+			margin-bottom: 3.125rem;
+		}
+
+	}
+	&__content {
+
+	}
+	&__footer {
+
+	}
+ }
+
+ .header-module {
+	&__title {
+	  position: relative;
+	  padding-bottom: 1.875rem;
+	  margin-bottom: 2.5rem;
+	  box-sizing: border-box;
+	  font-weight: 700;
+	  font-size: 2.5rem;
+	  letter-spacing: 0.02em;
+	  color: #000;
+	  &:after {
+		 content: "";
+		 position: absolute;
+		 bottom: 0;
+		 left: 0;
+		 width: 6.25rem;
+		 height: 0.5rem;
+		 background: linear-gradient(
+			90deg,
+			rgba(101, 25, 128, 0.9) 0%,
+			rgba(208, 15, 132, 0.9) 100%
+		 );
+		 border-radius: 0.625rem;
+	  }
+	}
+}
+
+.body-module {
+}
+.body-module__content {
+}
+
+.content-module {
+	p {
+
+	}
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 1.25rem;
+		margin: 1.875rem 0;
+	}
+	ol {
+		padding: 0 0 0 0.9375rem;
+		li {
+
+		}
+	}
+	&__flex-img {
+		display: flex;
+		// flex-wrap: wrap;
+		gap: 2.5rem;
+		img {
+			width: 50%;
+		}
+	}
+}
+
+.footer-module__notification {
+	&:not(:last-child){
+		margin-bottom: 2.1875rem;
+	}
+}
+
