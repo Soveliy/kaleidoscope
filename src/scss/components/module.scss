@@ -8,6 +8,11 @@
 	left: 0;
 	padding-bottom: 3.125rem;
 	background: linear-gradient(135deg, #e7f4fe 0%, #fbfdff 20.8%);
+	&__inner {
+		display: grid; 
+		grid-template-columns: 360px 1fr; 
+		gap: 30px;
+	}
 	&__head {
 	  display: flex;
 	  align-items: center;
