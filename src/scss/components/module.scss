@@ -70,7 +70,12 @@
 
 	}
 	&__footer {
-
+	}
+	&__separator {
+		margin-top: 7.5rem;
+		&:not(:last-child){
+			margin-bottom: 7.5rem;
+		}
 	}
  }
 
@@ -131,6 +136,9 @@
 		}
 	}
 }
+.content-module__flex-img--center {
+	align-items: center;
+}
 
 .footer-module__notification {
 	&:not(:last-child){
@@ -138,3 +146,8 @@
 	}
 }
 
+.separator-module {
+	width: 100%;
+	height: 5px;
+	background-image: linear-gradient(90deg, rgba(101, 25, 128, 0.2) 2.56%, rgba(208, 15, 132, 0.2) 92.07%);
+}
