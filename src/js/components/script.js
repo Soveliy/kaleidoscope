@@ -5,7 +5,7 @@ const searchInput = document.querySelector('.search__input');
 if (searchForm && searchInput) {
 	searchInput.setAttribute('maxlength', '100');
 	searchInput.addEventListener('input', function () {
-		if (searchInput.value.length > 4) {
+		if (searchInput.value.length > 3) {
 			searchForm.classList.add('--active');
 		} else {
 			searchForm.classList.remove('--active');
