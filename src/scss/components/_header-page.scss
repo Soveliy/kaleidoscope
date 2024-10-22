@@ -17,6 +17,9 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #fff;
+	 &:not(:last-child){
+		margin-right: 0.9375rem;
+	 }
   }
   // &:before {
   //   content: "";
@@ -41,7 +44,7 @@
     max-width: 25rem;
     width: 100%;
     margin-left: auto;
-	 transition: all 0.6s ease 0s;
+	 transition: all 0.8s ease 0s;
 	 &.--active {
 		max-width: 43.75rem;
 	  }
