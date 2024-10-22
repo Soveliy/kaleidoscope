@@ -122,13 +122,16 @@
     border-radius: 20px;
     width: 2rem;
     height: 0.5rem;
-    background: #e4ebf1;
+    background-color: #e4ebf1;
     &--success {
-      background: #23e063;
+      background-color: #23e063;
     }
     &--current {
       background-color: rgba(0, 145, 250, 0.2);
     }
+	 &--blue {
+		background-color: #0091FA;
+	 }
   }
   &__counter {
     font-weight: 700;
