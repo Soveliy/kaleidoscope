@@ -199,6 +199,103 @@
 		max-width: 40%;
 	}
 }
+//========================================================================================================================================================
+
+.notification-test {
+	max-width: 31.875rem;
+	width: 100%;
+	overflow: hidden;
+}
+.notification-test__info { 
+	display: flex;
+	align-items: center;
+	&:not(:last-child){
+		margin-bottom: 1.25rem;
+	}
+}
+.notification-test__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 11.25rem;
+	height: 11.25rem;
+	border: 0.5rem solid grey;
+	border-radius: 1.25rem;
+	overflow: hidden;
+	&:not(:last-child){
+		margin-right: 2.5rem;
+	}
+	svg {
+		width: 6.25rem;
+		height: 6.25rem;
+	}
+}
+.notification-test__result {
+}
+.notification-test__value {
+	font-size: 100px;
+	font-weight: 700;
+	line-height: 100px;
+	letter-spacing: 0.02em;
+	&:not(:last-child){
+		margin-bottom: 0.3125rem;
+	}
+}
+.notification-test__value-text {
+	font-size: 1.5625rem;
+	font-weight: 700;
+	line-height: 1.5625rem;
+	letter-spacing: 0.02em;
+	color: #000;
+}
+.notification-test__text {
+	font-size: 3.125rem;
+	font-weight: 700;
+	line-height: 3.7031rem;
+	letter-spacing: 0.02em;
+	&:not(:last-child){
+		margin-bottom: 3.5rem;
+	}
+}
+.notification-test__btn {
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.25rem;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	padding: 1rem 1.875rem;
+	border-radius: 0.9375rem;
+}
+
+.notification-test--success {
+	.notification-test__icon {
+		border: 0.5rem solid #17C854;
+		background-color: #f1fbf6;
+	}
+	.notification-test__value {
+		color: #17C854;
+	}
+	.notification-test__text {
+		span {
+			color: #17C854;
+		}
+	}
+}
+.notification-test--false {
+	.notification-test__icon {
+		border: 0.5rem solid #CC1384;
+		background-color: #f9f1f9;
+	}
+	.notification-test__value {
+		color: #CC1384;
+	}
+	.notification-test__text {
+		span {
+			color: #CC1384;
+		}
+	}
+}
+//========================================================================================================================================================
 
 // Стилизация скролла сайта ==============================================================================================================================
 ::-webkit-scrollbar {

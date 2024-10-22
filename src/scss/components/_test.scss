@@ -41,10 +41,30 @@
 //     margin: 0 auto;
 //   }
   &__answer {
+	 display: flex;
+	 align-items: center;
+	 gap: 0.625rem;
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	letter-spacing: 0.02em;
     margin-top: 1.25rem;
     padding: 1.25rem 1.5625rem;
     box-sizing: border-box;
     border-radius: 1.25rem;
+	 svg {
+		width: 26px;
+		height: 1.5rem;
+	 }
+	 span {
+		font-weight: 700;
+	 }
+	 &--true {
+		background-color: #E5F9F0;
+	 }
+	 &--false {
+		background-color: #CC13840D;
+	 } 
   }
   &__footer {
     display: flex;
@@ -63,7 +83,11 @@
     cursor: pointer;
     svg {
       margin-left: 0.625rem;
-    }
+    } 
+	 &:disabled {
+		opacity: 0.2;
+		cursor: not-allowed; 
+	}
   }
 //   &__close {
 //     background-color: transparent;
@@ -127,7 +151,7 @@
     &:after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: 0; 
       left: 0;
       width: 6.25rem;
       height: 0.5rem;
@@ -143,8 +167,12 @@
     position: relative;
     display: flex;
     align-items: center;
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	letter-spacing: 0.02em;
     padding: 1.4375rem 0.9375rem 1.4375rem 3.5rem;
-    border-top: 2px solid #e4ebf1;
+    border-top: 0.125rem solid #e4ebf1; 
     cursor: pointer;
     &:before {
       content: "";
@@ -177,6 +205,7 @@
     }
   }
   &__option {
+	display: block;
     input {
       display: none;
       &:checked + .test-item__fake-radio {
@@ -193,5 +222,48 @@
         border-bottom: 2px solid #e4ebf1;
       }
     }
+	 @media (any-hover: hover){
+		 &:hover { 
+			background-color: #ECF6FE;
+		} 
+	 }
   }
 }
+
+.test-item__option--true {
+	.test-item__fake-radio {
+		font-weight: 700;
+	}
+	.test-item__fake-radio:before {
+		border: 0.125rem solid #23E063;
+  }
+  .test-item__fake-radio:after {
+		background-color: #23E063;
+		opacity: 1;
+	}
+}
+
+.test-item__option--false {
+	.test-item__fake-radio {
+		font-weight: 700;
+	}
+	.test-item__fake-radio:before {
+		border: 0.125rem solid #CC1384;
+  }
+  .test-item__fake-radio:after {
+		background-color: #CC1384;
+		opacity: 1;
+	}
+}
+
+.test-status__item--false {
+	background: #CC1384;
+}
+
+.test__notification {
+	margin: 0px auto;
+	&:not(:last-child){
+		margin-bottom: 3.4375rem;
+	}
+}
+
