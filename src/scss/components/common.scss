@@ -99,6 +99,16 @@
 			margin-bottom: 2.25rem;
 		}
 	}
+	&__filter {
+		.checkbox {
+			&:not(:last-child){
+				margin-bottom: 1rem;
+			}
+		}
+		.checkbox__label {
+			width: 86%;
+	  }
+	}
 	&__footer {
 
 	}
