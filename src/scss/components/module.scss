@@ -10,8 +10,17 @@
 	background: linear-gradient(135deg, #e7f4fe 0%, #fbfdff 20.8%);
 	&__inner {
 		display: grid; 
-		grid-template-columns: 360px 1fr; 
-		gap: 30px;
+		grid-template-columns: 22.5rem 1fr; 
+		gap: 1.875rem;
+		@media (max-width: 1550px){
+			grid-template-columns: 300px 1fr; 
+		}
+		.module__head {
+			max-width: 1120px;
+		}
+		.module__container {
+			max-width: 1120px;
+		}
 	}
 	&__head {
 	  display: flex;
