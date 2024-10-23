@@ -17,6 +17,9 @@
   &__list-item {
 	position: relative;  
 	width: 95%;
+	&:not(:last-child){
+		margin-bottom: 0.1875rem;
+	}
     & + & {
 		
       // margin-top: 1.5625rem;
@@ -91,7 +94,10 @@
 		}
 		svg {
 			fill: #0091FA;
-			stroke: #fff;
+			stroke: #0091FA;
+			path {
+				fill: #fff;
+			}
 		}
 	  }
 }
