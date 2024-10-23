@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+	<div class="site-container">
+		@include('partials/header.html')
+		<main class="main">
+
+			<div class="header-page">
+				<div class="container">
+					<div class="header-page__row">
+						@include('partials/status.html')
+						<h1 class="header-page__title">
+							Статистика стотрудников
+						</h1>
+						@include('partials/search.html')
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="container">
+
+					<div class="content__row">
+						@include('partials/sidebar-admin.html')
+						<div class="content__right">
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</main>
+		@include('partials/footer.html')
+		<!-- @include('html/h1.html') пример include -->
+	</div>
+</body>
+
+</html>

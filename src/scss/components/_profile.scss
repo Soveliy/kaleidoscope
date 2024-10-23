@@ -42,6 +42,11 @@
     margin-right: 0.625rem;
     flex-shrink: 0;
   }
+  &__person {
+	width: 2.125rem;
+	height: 2.125rem;
+	margin-right: 0.625rem;
+  }
   &__name {
     font-weight: 700;
     font-size: 1.25rem;
@@ -94,3 +99,17 @@
     }
   }
 }
+
+.profile-preview--admin {
+	.profile-preview__body {
+	
+	}
+	.profile-preview__row {
+		padding: 0;
+		background: none;
+	}
+	.profile-preview__progress-desc:before {
+		display: none;
+	}
+}
+
