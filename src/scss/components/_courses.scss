@@ -15,9 +15,10 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  &-preview {
+  &-preview { 
 	position: relative;
     border-radius: 1.5625rem;
+	//  border: 5px solid #fff;
     transition: 0.3s;
     &:hover {
       background-color: rgba(0, 145, 250, 0.1);
@@ -76,6 +77,12 @@
       letter-spacing: 0.02em;
       color: #090909;
     }
+	 &__btn {
+		width: 73%;
+		padding: rem(11.5) rem(15);
+		background: linear-gradient(152.43deg, rgba(1, 96, 235, 0.8) -0.55%, rgba(0, 145, 250, 0.8) 129.29%);
+		border-radius: rem(15);
+	 }
 		@media (any-hover: hover) {
 			&:hover { 
 				.courses-preview__image-container img {
@@ -84,6 +91,10 @@
 		} 
 	}
   }
+}
+
+.courses-preview.courses-preview--create {
+	border: rem(5) dashed #338AF433;
 }
 
 .sticker-check {
