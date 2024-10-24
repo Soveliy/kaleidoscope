@@ -14,13 +14,19 @@
   &__title {
     margin: 0;
     font-weight: 700;
-    font-size: 50px;
+    font-size: rem(50);
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #fff;
 	 &:not(:last-child){
 		margin-right: 0.9375rem;
 	 }
+	 @media (max-width: 1550px){
+		  font-size: rem(36);
+	 }
+	 @media (max-width: 1200px){
+		font-size: rem(28);
+  }
   }
   // &:before {
   //   content: "";

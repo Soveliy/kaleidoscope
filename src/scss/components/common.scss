@@ -317,15 +317,141 @@
 }
 //========================================================================================================================================================
 
+.sticker-name {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: rem(20);
+	font-weight: 700;
+	line-height: rem(20);
+	letter-spacing: -0.02em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	padding: rem(10) rem(16);
+	background: linear-gradient(126.28deg, rgba(1, 96, 235, 0.9) 0%, rgba(0, 145, 250, 0.9) 100%);
+	border-radius: rem(12);
+	overflow: hidden;
+}
+
+.progress-box {
+	display: flex;
+	align-items: center; 
+	gap: rem(5);
+	padding: rem(5) rem(10);
+	background: #f9f1f9;
+	border-radius: rem(15);
+	overflow: hidden;
+	&__number {
+	font-size: rem(15);
+	font-weight: 700;
+	line-height: rem(15);
+	letter-spacing: -0.02em;
+	color: #CC1384;
+	}
+}
+.line-progress {
+	width: 100%;
+	height: rem(6);
+	border: rem(1) solid #CC1384;
+	border-radius: rem(10);
+	overflow: hidden;
+	&::before {
+		content:''; 
+		float: left;
+		height: 100%;
+	}
+}
+.progress-box.--line-20 {
+	&__number {
+		color: #CC1384;
+	}
+	.line-progress {
+		width: 100%;
+		height: rem(6);
+		border: rem(1) solid #CC1384;
+		border-radius: rem(10);
+		overflow: hidden;
+		&::before {
+			width: 20%;
+			background: #CC1384;	
+		}
+	}
+}
+.progress-box.--line-100 {
+	background: linear-gradient(132.64deg, rgba(49, 228, 110, 0.15) -5.53%, rgba(23, 200, 84, 0.15) 112.47%);
+	.progress-box__number {
+		color: #26d862;
+	}
+	.line-progress {
+		width: 100%;
+		height: rem(6);
+		border: rem(1) solid #26d862;
+		border-radius: rem(10);
+		overflow: hidden;
+		&::before {
+			width: 100%;
+			background: linear-gradient(128.66deg, #31E46E 0%, #17C854 88.89%);
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+.report-table {
+	text-align-last: left;
+	border-collapse: collapse; 
+	border: none;
+	th {
+		padding: rem(5) rem(20) rem(20) rem(0);
+		border: none;
+		&:nth-child(3)	{
+			width: 50%;
+		}
+	}
+	td {
+		padding: rem(7) rem(20) rem(7) rem(0);
+		border: none;
+		border-top: rem(2) solid #E4EBF1;
+		border-bottom: rem(2) solid #E4EBF1;
+		&:nth-child(3)	{
+			width: 50%;
+		}
+		.progress-box {
+			width: rem(105);
+		}
+	}
+	&__row {
+		display: flex;
+		align-items: center;
+		gap: rem(20);
+	}
+	&__name {
+		font-size: rem(15);
+		font-weight: 700;
+		line-height: rem(17.78);
+		letter-spacing: -0.02em;
+		color: #7e7e80;
+		text-transform: uppercase;
+	}
+	&__value {
+		font-size: rem(20);
+		font-weight: 700;
+		line-height: rem(23.7);
+		letter-spacing: -0.02em;
+		color: #000;
+		span {
+			color: #CC1384;
+		}
+		&.--blue {
+			color: #1A83F3;
+		}
+	}
+}
+//========================================================================================================================================================
 
 
-
-
-
-
-
-
-
+//========================================================================================================================================================
 
 // Стилизация скролла сайта ==============================================================================================================================
 ::-webkit-scrollbar {

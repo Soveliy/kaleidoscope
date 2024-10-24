@@ -7,7 +7,7 @@
 	}
 }
 
-.header-report {
+.header-report { 
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -24,6 +24,9 @@
 		font-weight: 700;
 		line-height: rem(50);
 		color: #000;
+		@media (max-width: 1200px){
+			font-size: rem(36);
+		}
 		svg {
 			width: rem(48);
 			height: rem(16);
@@ -49,12 +52,95 @@
 	}
 }
 
+.header-report--purple {
+	background: linear-gradient(90deg, rgba(101, 25, 128, 0.1) 0%, rgba(208, 15, 132, 0.1) 103.83%);
+	.header-report__name-icon {
+		background: linear-gradient(90deg, #651980 0%, #D00F84 100%);
+	}
+}
+.header-report--light {
+	background: linear-gradient(90deg, rgba(252, 105, 76, 0.1) 0%, rgba(241, 139, 41, 0.1) 100.06%);
+	.header-report__name-icon {
+		background: linear-gradient(90deg, #FC694C 0%, #F18B29 100.06%);
+	}
+}
+
 .info-header-report {
-	display: flex;
-	align-items: center;
+	display: grid; 
+	grid-template-columns: auto; 
+	grid-auto-flow: column; 
+	align-items: center; 
+	justify-content: flex-end;
 	gap: rem(10);
 }
 .info-header-report__item {
+	display: flex;
+	justify-content: flex-end;
+	.info-report-text {
+		// width: 60%;
+	}
 }
+.counter-report {
+	display: grid; 
+	grid-template-columns: auto; 
+	grid-auto-flow: column; 
+	align-items: center; 
+	gap: rem(6);
+	font-size: rem(25);
+	font-weight: 700;
+	line-height: rem(25);
+	letter-spacing: -0.02em;
+	padding: rem(14) rem(16);
+	border: 4px solid #721C821A;
+	border-radius: rem(20);
+}
+.counter-report__result {
+	color: #721C8280;
+}
+.counter-report__general {
+	display: flex;
+	align-items: center;
+	gap: rem(2);
+	color: #721C82;
+	&::before{
+		content:'/'; 
+
+	}
+}
+.total-report {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: -0.02em;
+	text-align: center;
+	color: #721C82;
+	padding: rem(14) rem(12);
+	background: #721C8214;
+	border-radius: rem(20);
+}
+.info-report-text {
+	font-size: rem(15);
+	font-weight: 700;
+	line-height: rem(15);
+	color: #721C82;
+}
+
 .body-report {
+	padding: rem(30) 0; 
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		display: grid; 
+		grid-template-columns: repeat(auto-fill, minmax(rem(550), 1fr)); 
+		gap: rem(60);
+		&:not(:last-child){
+			margin-bottom: rem(33);
+		}
+	}
+	&__column {
+		flex: 0 1 50%;
+	}
 }
