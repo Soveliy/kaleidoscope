@@ -3,19 +3,21 @@
   img {
     margin-top: -2.1875rem;
   }
+  &__main {
+	padding: 3.75rem 2.5rem 1.25rem 1.25rem;
+	background: url(../img/header_bg.jpg) no-repeat center center;
+	background-size: cover;
+	border-radius: 3.75rem;
+	@media (max-width: 1200px){
+	  padding: 3.75rem 1.25rem 2.1875rem 1.25rem;
+	}
+  }
   &__row {
-    padding: 3.75rem 1.25rem;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.9375rem;
-    background: url(../img/header_bg.jpg) no-repeat center center;
-    background-size: cover;
-    border-radius: 3.75rem;
-	 @media (max-width: 1200px){
-		padding: 3.75rem 1.25rem 2.1875rem 1.25rem;
-	 }
   }
   &__title {
     font-family: "Yrsa", sans-serif;
@@ -36,4 +38,20 @@
       width: 0.1875rem;
     }
   }
+  &__actions {
+	visibility: hidden;
+	opacity: 0;
+	&.--active{
+		visibility: visible;
+		opacity: 1;
+	}
+  }
+}
+
+.actions-header {
+	display: flex;
+	justify-content: flex-end;
+	&__file-upload { 
+		width: 7.375rem;
+	}
 }

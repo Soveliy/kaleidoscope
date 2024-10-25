@@ -1,0 +1,57 @@
+//<INPUT>
+input[type="file"] {
+	display: none; 
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	&:focus {
+		outline: none;
+	}
+}
+.input {
+	display: flex;
+	width: 100%;
+	height: rem(50);
+	// padding: 0px 39px 0 15px;
+	border-radius: rem(3);
+	background: rgba(2, 0, 32, 0.03);
+
+	&._focus {
+		background: grey;
+	}
+
+	&._error {
+		border: 1px solid red; 
+	}
+}
+
+.file-upload {
+	position: relative;
+	display: inline-block;
+	&__label {
+		display: flex;
+		align-items: center;
+		gap: 0.375rem;
+		font-size: 0.9375rem;
+		font-weight: 400;
+		line-height: 0.9375rem;
+		letter-spacing: -0.02em;
+		text-align: center;
+		padding: 0.4375rem 1rem;
+		cursor: pointer;
+		background: linear-gradient(132.46deg, #0160EB -4.62%, #0091FA 142.7%);
+		color: white;
+		border-radius: 0.625rem;
+		overflow: hidden;
+	}
+	&__icon {
+		flex: 0 0 0.5625rem;
+		width: 0.5625rem;
+		height: 0.75rem;
+	}
+}

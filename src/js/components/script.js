@@ -12,3 +12,23 @@ if (searchForm && searchInput) {
 		}
 	});
 }
+
+// File-input
+const fileInput = document.getElementById('file-input');
+const fileLabel = document.getElementById('file-label');
+if (fileInput) {
+	fileInput.addEventListener('change', function () {
+		const fileName = this.files[0] ? this.files[0].name : 'Загрузить';
+		if (fileLabel) {
+			fileLabel.textContent = fileName;
+		}
+	});
+}
+
+// Отображение File-input в зависимости от страницы
+if (document.body.classList.contains('page__body--admin')) {
+	const headerActions = document.querySelector('.header__actions');
+	if (headerActions) {
+		headerActions.classList.add('--active');
+	}
+}

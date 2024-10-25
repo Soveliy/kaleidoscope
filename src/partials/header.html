@@ -1,10 +1,23 @@
 <header class="header">
-  <div class="container">
-    <a href="/" class="header__row">
-      <img src="img/logo_head.svg" alt="">
-      <div class="header__title">
-        ОБУЧЕНИЕ
-      </div>
-    </a>
-  </div>
+	<div class="container">
+		<div class="header__main">
+			<a href="/" class="header__row">
+				<img src="img/logo_head.svg" alt="">
+				<div class="header__title">
+					ОБУЧЕНИЕ
+				</div>
+			</a>
+			<div class="header__actions actions-header">
+				<div class="actions-header__file-upload file-upload">
+					<label for="file-input" class="file-upload__label">
+						<svg class="file-upload__icon" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 9.36364V12H10V9.36364M5.5 8L2 5M5.5 8L9 5M5.5 8V0" stroke="white" stroke-width="2" />
+						</svg>
+						<span id="file-label">Загрузить</span>
+					</label>
+					<input id="file-input" type="file" />
+				</div>
+			</div>
+		</div>
+	</div>
 </header>
