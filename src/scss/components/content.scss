@@ -16,17 +16,17 @@
 	 width: 100%;
 	}
 	&__title {
-		font-size: rem(50);
+		font-size: 3.125rem;
 		font-weight: 700;
-		line-height: rem(50);
+		line-height: 3.125rem;
 		color: #323333;
 		&:not(:last-child){
-			margin-bottom: rem(40);
+			margin-bottom: 2.5rem;
 		}
 	}
 	&__report {
 		&:not(:last-child){
-			margin-bottom: rem(60);
+			margin-bottom: 3.75rem;
 		}
 	}
  }

@@ -13,8 +13,8 @@
     background: url(../img/header_bg.jpg) no-repeat center center;
     background-size: cover;
     border-radius: 3.75rem;
-	 @media (max-width: em(1280)){
-		padding: 3.75rem 1.25rem 2.5rem 1.25rem;
+	 @media (max-width: 1200px){
+		padding: 3.75rem 1.25rem 2.1875rem 1.25rem;
 	 }
   }
   &__title {

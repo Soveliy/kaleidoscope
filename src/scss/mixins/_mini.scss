@@ -6,18 +6,10 @@
   background-repeat: no-repeat;
 }
 
-// Шрифт по умолчанию
-$browser-context: 16; 
+$browser-context: 16; // Default
 
-//REM
 @function rem($pixels, $context: $browser-context) {
   @return #{$pixels/$context}rem;
-}
-
-//EM
-@function em($px, $current: $browser-context) {
-	$result: math.div($px, $current) + em; 
-	@return $result;
 }
 
 @mixin image-set($pathToImage) {
