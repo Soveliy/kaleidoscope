@@ -66,7 +66,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       &:not(:last-child){
-			margin-bottom: 1.25rem;
+			margin-bottom: 1.0625rem;
 		}
     }
     &__desc {
@@ -74,7 +74,7 @@
       // font-size: 1.5625rem;
 		font-size: 1.25rem;
       line-height: 100%;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.03em;
       color: #090909;
     }
 	 &__btn {
@@ -108,8 +108,8 @@
 }
 .courses-preview__sticker {
 	position: absolute;
-	top: -1.5625rem;
-	right: -1.5625rem;
+	top: -1.7rem;
+	right: -1.7625rem;
 	z-index: 3;
 }
 
