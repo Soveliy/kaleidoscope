@@ -724,6 +724,18 @@ textarea:focus {
   height: 2.625rem;
   border-radius: 50%;
 }
+.notification__title-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.notification__title-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
 .notification__subtitle {
   font-size: 1.5625rem;
   font-weight: 400;
@@ -937,6 +949,10 @@ textarea:focus {
   margin-right: 2.5rem;
 }
 .notification-test__icon svg {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+.notification-test__icon img {
   width: 6.25rem;
   height: 6.25rem;
 }
