@@ -52,6 +52,8 @@
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: -0.02em;
+  opacity: 0.8;
+  color: #e4d1e6;
 }
 .notification__action {
   display: -webkit-box;
@@ -65,11 +67,20 @@
   text-transform: uppercase;
   background: #0079F3;
 }
+@media (any-hover: hover) {
+  .notification__btn:hover {
+    opacity: 0.9;
+    scale: 0.95;
+  }
+}
 .notification.notification--success {
   background: #fff;
   border: 0.3125rem solid #23E063;
 }
 .notification.notification--success .notification__descp {
+  color: #000;
+}
+.notification.notification--success .notification__subtitle {
   color: #000;
 }
 .notification.notification--success .notification__btn {
@@ -475,6 +486,14 @@
 }
 .report-table__value.--blue {
   color: #1A83F3;
+}
+
+.content-module p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -0.02em;
+  text-align: justify;
 }
 
 ::-webkit-scrollbar {

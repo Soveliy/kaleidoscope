@@ -46,6 +46,8 @@
 		font-weight: 400;
 		line-height: 1.875rem;
 		letter-spacing: -0.02em;
+		opacity: 0.8;
+		color: #e4d1e6;
 	}
 	&__action {
 		display: flex;
@@ -53,12 +55,21 @@
 	}
 	&__btn { 
 		text-transform: uppercase;
-		background: #0079F3;
+		background: #0079F3; 
+		@media (any-hover: hover){
+			 &:hover { 
+			 opacity: 0.9;
+			 scale: 0.95; 
+		  } 
+		}
 	}
 	&.notification--success {
 		background: #fff;
 		border: 0.3125rem solid #23E063;
 		.notification__descp {
+			color: #000;
+		}
+		.notification__subtitle { 
 			color: #000;
 		}
 		.notification__btn {  
@@ -454,7 +465,15 @@
 }
 //========================================================================================================================================================
 
-
+.content-module {
+	p {
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	letter-spacing: -0.02em;
+	text-align: justify;
+	}
+}
 //========================================================================================================================================================
 
 // Стилизация скролла сайта ==============================================================================================================================
