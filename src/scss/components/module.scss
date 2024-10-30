@@ -6,7 +6,7 @@
 	// width: 100%;
 	// top: 0;
 	// left: 0;
-	padding-bottom: 3.125rem;
+	// padding-bottom: 3.125rem;
 	background: linear-gradient(135deg, #e7f4fe 0%, #fbfdff 20.8%);
 	&__inner {
 		display: grid; 
@@ -23,6 +23,9 @@
 			max-width: 70rem;
 			// width: 75.8%;
 		}
+	}
+	&__column {
+		padding-bottom: 3.125rem;
 	}
 	&__head {
 	  display: flex;

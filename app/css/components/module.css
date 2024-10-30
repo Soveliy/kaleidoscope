@@ -1,5 +1,4 @@
 .module {
-  padding-bottom: 3.125rem;
   background: linear-gradient(135deg, #e7f4fe 0%, #fbfdff 20.8%);
 }
 .module__inner {
@@ -20,6 +19,9 @@
 }
 .module__inner .module__container {
   max-width: 70rem;
+}
+.module__column {
+  padding-bottom: 3.125rem;
 }
 .module__head {
   display: -webkit-box;
