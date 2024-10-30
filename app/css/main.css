@@ -398,17 +398,17 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 0.9375rem;
-  background: -webkit-gradient(linear, left top, right top, from(#0160eb), to(#0091fa));
-  background: linear-gradient(90deg, #0160eb 0%, #0091fa 100%);
+  background: linear-gradient(90.99deg, rgba(1, 96, 235, 0.9) -189.55%, rgba(0, 145, 250, 0.9) 219.41%);
 }
 .profile-preview__image {
-  height: 2.15rem;
+  height: 2.125rem;
   width: 2.125rem;
   -o-object-fit: cover;
   object-fit: cover;
   margin-right: 0.725rem;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  border-radius: 0.625rem;
 }
 .profile-preview__person {
   width: 2.125rem;
@@ -422,11 +422,15 @@ a {
   letter-spacing: -0.02em;
   color: #fff;
 }
+.profile-preview__name:not(:last-child) {
+  margin-bottom: 0.0625rem;
+}
 .profile-preview__pos {
   font-size: 0.9375rem;
   line-height: 100%;
   letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+  opacity: 0.6;
 }
 .profile-preview__progress {
   margin-left: auto;
@@ -442,6 +446,12 @@ a {
   align-items: flex-end;
 }
 .profile-preview__progress-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 100%;
@@ -449,7 +459,14 @@ a {
   color: #fff;
 }
 .profile-preview__progress-status span {
+  color: #fff;
+}
+.profile-preview__progress-status span:nth-child(1) {
   opacity: 0.6;
+}
+.profile-preview__progress-status span:nth-child(2)::before {
+  content: "/";
+  margin: 0 0.125rem;
 }
 .profile-preview__progress-desc {
   position: relative;
@@ -470,8 +487,8 @@ a {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: 7px;
-  width: 7px;
+  height: 0.4375rem;
+  width: 0.4375rem;
   border-radius: 50%;
   background-color: #cc1384;
 }
@@ -1160,7 +1177,7 @@ textarea:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: linear-gradient(135deg, #651980 0%, #d00f84 80%, #d00f84 100%);
+  background: linear-gradient(90.12deg, rgba(101, 25, 128, 0.9) 0%, rgba(208, 15, 132, 0.9) 80%, rgba(208, 15, 132, 0.9) 100%);
   border-radius: 1.875rem;
   padding: 0.7188rem 0.75rem;
 }
@@ -1276,6 +1293,7 @@ textarea:focus {
   overflow: hidden;
   border-radius: 1.625rem;
   background-color: rgba(128, 128, 128, 0.3490196078);
+  cursor: url("../img/icons/cursor.svg"), auto;
 }
 .courses-preview__image-container img {
   position: absolute;
@@ -1311,6 +1329,7 @@ textarea:focus {
   background: -webkit-gradient(linear, left top, right top, from(#0160eb), to(#0091fa));
   background: linear-gradient(90deg, #0160eb 0%, #0091fa 100%);
   background-clip: text;
+  cursor: url("../img/icons/cursor.svg"), auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1454,7 +1473,7 @@ textarea:focus {
     left: -1.25rem;
     width: 110%;
     height: 100%;
-    background-color: rgba(0, 145, 250, 0.2196078431);
+    background-color: rgba(0, 145, 250, 0.1);
     border-left: 0.25rem solid #0091FA;
     border-radius: 0 0.9375rem 0.9375rem 0;
   }
@@ -1477,7 +1496,7 @@ textarea:focus {
   left: -1.25rem;
   width: 110%;
   height: 100%;
-  background-color: rgba(0, 145, 250, 0.2196078431);
+  background-color: rgba(0, 145, 250, 0.1);
   border-left: 0.25rem solid #0091FA;
   border-radius: 0 0.9375rem 0.9375rem 0;
 }
@@ -1523,7 +1542,7 @@ textarea:focus {
 }
 .progress__value {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 100%;
   letter-spacing: -0.02em;
   text-align: center;
@@ -1533,11 +1552,12 @@ textarea:focus {
   min-width: 2.75rem;
 }
 .progress__bar {
+  max-width: 12rem;
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: 5px;
-  border-radius: 15px;
+  height: 0.3125rem;
+  border-radius: 0.9375rem;
   background: -webkit-gradient(linear, left top, right top, from(rgba(1, 96, 235, 0.2)), to(rgba(0, 145, 250, 0.2)));
   background: linear-gradient(90deg, rgba(1, 96, 235, 0.2) 0%, rgba(0, 145, 250, 0.2) 100%);
 }
@@ -1796,7 +1816,7 @@ textarea:focus {
 }
 .test-status__item {
   font-size: 0;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   width: 2rem;
   height: 0.5rem;
   background-color: #e4ebf1;
@@ -1809,10 +1829,11 @@ textarea:focus {
 }
 .test-status__item--blue {
   background-color: #0091FA;
+  opacity: 0.8;
 }
 .test-status__counter {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 100%;
   color: #0091fa;
 }

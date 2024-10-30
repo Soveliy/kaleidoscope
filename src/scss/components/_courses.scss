@@ -20,6 +20,7 @@
     border-radius: 1.5625rem;
 	//  border: 5px solid #fff;
     transition: 0.3s;
+	//  cursor: url('../img/icons/cursor.svg'), auto;
     &:hover {
       background-color: rgba(0, 145, 250, 0.1);
     }
@@ -35,6 +36,7 @@
       // height: 12.5rem;
       border-radius: 1.625rem; 
 		background-color: #80808059;
+		cursor: url('../img/icons/cursor.svg'), auto;
       img {
 			position: absolute;
 			top: 0;
@@ -63,6 +65,7 @@
 		// overflow-wrap: break-word;
       background: linear-gradient(90deg, #0160eb 0%, #0091fa 100%);
       background-clip: text;
+		cursor: url('../img/icons/cursor.svg'), auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       &:not(:last-child){

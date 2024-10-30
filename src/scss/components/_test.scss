@@ -119,7 +119,7 @@
   }
   &__item {
     font-size: 0;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     width: 2rem;
     height: 0.5rem;
     background-color: #e4ebf1;
@@ -129,13 +129,14 @@
     &--current {
       background-color: rgba(0, 145, 250, 0.2);
     }
-	 &--blue {
+	 &--blue { 
 		background-color: #0091FA;
+		opacity: 0.8;
 	 }
   }
   &__counter {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 100%;
     color: #0091fa;
   }
