@@ -1,11 +1,11 @@
 .module {
-	position: fixed;
-	overflow: auto;
-	z-index: 5000;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
+	// position: fixed;
+	// overflow: auto;
+	// z-index: 5000;
+	// height: 100%;
+	// width: 100%;
+	// top: 0;
+	// left: 0;
 	padding-bottom: 3.125rem;
 	background: linear-gradient(135deg, #e7f4fe 0%, #fbfdff 20.8%);
 	&__inner {
@@ -17,9 +17,11 @@
 		}
 		.module__head {
 			max-width: 70rem;
+			// width: 75.8%;
 		}
 		.module__container {
 			max-width: 70rem;
+			// width: 75.8%;
 		}
 	}
 	&__head {
